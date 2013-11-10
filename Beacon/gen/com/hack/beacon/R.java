@@ -310,7 +310,9 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f060012;
         public static final int hello_world=0x7f06001b;
-        public static final int title_activity_event_details=0x7f06001c;
+        public static final int parse_app_id=0x7f06001c;
+        public static final int parse_client_key=0x7f06001d;
+        public static final int title_activity_event_details=0x7f06001e;
     }
     public static final class style {
         /** 
