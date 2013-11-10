@@ -5,10 +5,10 @@
  * should not be modified by hand.
  */
 
-package com.example.mapsapp;
+package com.hack.beacon;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="com.example.mapsapp.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="com.hack.beacon.permission.MAPS_RECEIVE";
     }
 }

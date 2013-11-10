@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.example.mapsapp;
+package com.hack.beacon;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

@@ -1,4 +1,4 @@
-package com.example.mapsapp;
+package com.hack.beacon;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.mapsapp;
+package com.hack.beacon;
 
 public final class R {
     public static final class attr {
@@ -195,10 +195,12 @@ containing a value of this type.
         public static final int terrain=0x7f050003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_event_details=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int event_details=0x7f090000;
+        public static final int main=0x7f090001;
     }
     public static final class string {
         public static final int action_settings=0x7f06001a;
@@ -294,6 +296,7 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f060012;
         public static final int hello_world=0x7f06001b;
+        public static final int title_activity_event_details=0x7f06001c;
     }
     public static final class style {
         /** 
@@ -330,20 +333,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.example.mapsapp:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.mapsapp:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.mapsapp:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.example.mapsapp:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.example.mapsapp:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.example.mapsapp:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.example.mapsapp:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.mapsapp:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.mapsapp:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.mapsapp:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.mapsapp:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.mapsapp:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.mapsapp:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.mapsapp:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.hack.beacon:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.hack.beacon:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.hack.beacon:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.hack.beacon:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.hack.beacon:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.hack.beacon:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.hack.beacon:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.hack.beacon:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.hack.beacon:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.hack.beacon:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.hack.beacon:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.hack.beacon:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.hack.beacon:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.hack.beacon:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -367,7 +370,7 @@ containing a value of this type.
             0x7f01000c, 0x7f01000d
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -377,11 +380,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:cameraBearing
+          @attr name com.hack.beacon:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -391,11 +394,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:cameraTargetLat
+          @attr name com.hack.beacon:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -405,11 +408,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:cameraTargetLng
+          @attr name com.hack.beacon:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -419,11 +422,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:cameraTilt
+          @attr name com.hack.beacon:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -433,11 +436,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:cameraZoom
+          @attr name com.hack.beacon:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -453,11 +456,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.mapsapp:mapType
+          @attr name com.hack.beacon:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -467,11 +470,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiCompass
+          @attr name com.hack.beacon:uiCompass
         */
         public static final int MapAttrs_uiCompass = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -481,11 +484,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiRotateGestures
+          @attr name com.hack.beacon:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -495,11 +498,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiScrollGestures
+          @attr name com.hack.beacon:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -509,11 +512,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiTiltGestures
+          @attr name com.hack.beacon:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -523,11 +526,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiZoomControls
+          @attr name com.hack.beacon:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -537,11 +540,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:uiZoomGestures
+          @attr name com.hack.beacon:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -551,11 +554,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:useViewLifecycle
+          @attr name com.hack.beacon:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mapsapp.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.hack.beacon.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -565,7 +568,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mapsapp:zOrderOnTop
+          @attr name com.hack.beacon:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
     };
