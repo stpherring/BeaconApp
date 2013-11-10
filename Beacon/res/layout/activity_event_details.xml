@@ -12,47 +12,134 @@
         android:id="@+id/eventName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/linearLayout1"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
         android:text="Event Name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+    
     <LinearLayout
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content"
-   	android:layout_below="@id/eventName" >
-    
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="99dp"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_weight=".3"
-        android:ems="10"
-        android:inputType="none" />
-    
+        android:layout_below="@id/eventName" >
+
+        <EditText
+            android:id="@+id/start"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".3"
+            android:ems="10"
+            android:inputType="none" />
+
+        <TextView
+            android:id="@+id/tack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".4"
+            android:text=" - "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/end"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".3"
+            android:ems="10"
+            android:inputType="none" />
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/tack"
+        android:id="@+id/txtLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight=".4"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:text=" - " 
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignLeft="@+id/eventName"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="14dp"
+        android:text="Location: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-     <EditText
-         android:id="@+id/editText2"
-         android:layout_width="117dp"
-         android:layout_height="wrap_content"
-         android:layout_marginLeft="18dp"
-         android:layout_marginTop="15dp"
-         android:layout_weight=".3"
-         android:ems="10"
-         android:inputType="none" />
-     
-     </LinearLayout>
+    <TextView
+        android:id="@+id/txtHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocation"
+        android:layout_below="@+id/txtLocation"
+        android:layout_marginTop="14dp"
+        android:text="Host: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtHost"
+        android:layout_below="@+id/txtHost"
+        android:layout_marginTop="14dp"
+        android:text="Category: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCategory"
+        android:layout_centerVertical="true"
+        android:text="Description: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLocation"
+        android:layout_alignBottom="@+id/txtLocation"
+        android:layout_toRightOf="@+id/txtCategory"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtCategory"
+        android:layout_toRightOf="@+id/txtHost"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCategory"
+        android:layout_alignBottom="@+id/txtCategory"
+        android:layout_alignLeft="@+id/location"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDescription"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/txtDescription"
+        android:minLines="2"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/directionsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="Get Directions" />
 
 </RelativeLayout>

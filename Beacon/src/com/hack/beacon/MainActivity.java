@@ -1,5 +1,7 @@
 package com.hack.beacon;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -14,6 +16,11 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//Testing for Event Details
+		//Intent intent = new Intent(this, EventDetails.class);
+    	//this.startActivity(intent);
+		
 		SupportMapFragment fm = (SupportMapFragment)  getSupportFragmentManager().findFragmentById(R.id.map);
 		GoogleMap mMap = fm.getMap(); 
 	}
