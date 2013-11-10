@@ -9,33 +9,50 @@
     tools:context=".EventDetails" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/eventName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="Event Name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+   	android:layout_below="@id/eventName" >
+    
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="99dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight=".3"
         android:ems="10"
-        android:inputType="time" >
-
-        <requestFocus />
-    </EditText>
-
+        android:inputType="none" />
+    
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_toRightOf="@+id/editText1"
-        android:text="Small Text"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_weight=".4"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text=" - " 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
+     <EditText
+         android:id="@+id/editText2"
+         android:layout_width="117dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:layout_weight=".3"
+         android:ems="10"
+         android:inputType="none" />
+     
+     </LinearLayout>
 
 </RelativeLayout>
