@@ -1,9 +1,7 @@
 package com.hack.beacon;
 
-import android.content.Intent;
-import android.net.Uri;
+import gen.com.google.android.gms.R;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
@@ -20,6 +18,10 @@ public class MainActivity extends FragmentActivity {
 		//Testing for Event Details
 		//Intent intent = new Intent(this, EventDetails.class);
     	//this.startActivity(intent);
+		
+		String app_id = getString(R.string.parse_app_id);
+		String client_key = getString(R.string.parse_client_key);
+		Parse.initialize(this, app_id, client_key);
 		
 		SupportMapFragment fm = (SupportMapFragment)  getSupportFragmentManager().findFragmentById(R.id.map);
 		GoogleMap mMap = fm.getMap(); 
