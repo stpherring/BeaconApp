@@ -1,12 +1,12 @@
 package com.hack.beacon;
 
-import gen.com.google.android.gms.R;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.parse.Parse;
 
 public class MainActivity extends FragmentActivity {
 
