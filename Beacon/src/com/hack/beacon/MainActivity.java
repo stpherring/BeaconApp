@@ -1,5 +1,6 @@
 package com.hack.beacon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
@@ -16,8 +17,8 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		
 		//Testing for Event Details
-		//Intent intent = new Intent(this, EventDetails.class);
-    	//this.startActivity(intent);
+		Intent intent = new Intent(this, EventDetails.class);
+    	this.startActivity(intent);
 		
 		String app_id = getString(R.string.parse_app_id);
 		String client_key = getString(R.string.parse_client_key);

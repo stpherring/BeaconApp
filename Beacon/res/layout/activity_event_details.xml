@@ -31,7 +31,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight=".3"
             android:ems="10"
-            android:inputType="none" />
+            android:inputType="none"
+            android:editable="false" />
 
         <TextView
             android:id="@+id/tack"
@@ -51,7 +52,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight=".3"
             android:ems="10"
-            android:inputType="none" />
+            android:inputType="none" 
+            android:editable="false" />
     </LinearLayout>
 
     <TextView
@@ -89,6 +91,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtCategory"
+        android:layout_below="@id/txtCategory"
+        android:layout_marginTop="14dp"
         android:layout_centerVertical="true"
         android:text="Description: "
         android:textAppearance="?android:attr/textAppearanceMedium" />
